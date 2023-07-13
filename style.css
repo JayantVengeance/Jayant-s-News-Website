@@ -1,0 +1,225 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.container
+{
+    max-width: 70rem;
+    margin-inline: auto;
+    overflow: hidden;
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+}
+.nav_bar
+{
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    height: 5rem;
+    display: flex;
+    gap: 10%;
+    position: fixed;
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
+.logo
+{
+    height: 4rem;
+    margin-left: 4rem;
+}
+.list_of_news
+{
+    margin-left: 4%;
+    margin-right: 3%;
+    display : flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+.list_of_news :hover
+{
+    color: rgb(118, 185, 185);
+    cursor: pointer;
+}
+.search_input
+{
+    align-items: baseline;
+}
+.text_input
+{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 7%;
+    border: 5px solid rgb(118, 185, 185);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.search_button
+{
+    width: 5rem;
+    height: 2.8rem;
+    margin-top: 7%;
+    background-color: rgb(118, 185, 185);
+}
+.search_button:hover
+{
+    cursor: pointer;
+    color: white;
+}
+.hero_section
+{
+    margin-top: 5rem;
+    background-color: rgb(118, 185, 185);
+    width: 100%;
+    height: 300rem;
+   
+}
+.cards_container
+{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: start;
+    display: flex;
+    height: max-content;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 30px;
+    
+    
+}
+.card
+{
+   
+    background-color: aliceblue;
+    width: 30%;
+    height: 400px;
+    box-shadow: 0 10px 10px rgb(119, 108, 130);
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 0.5rem;
+}
+.card_content
+{
+    padding: 22px;
+}
+main
+{
+    padding-block: 1.2rem;
+}
+.nav_item.active
+{
+    color: aqua;
+}
+.card:hover
+{
+    box-shadow: 1px 1px 8px rgb(243, 202, 224);
+    background-color: rgb(192, 229, 234);
+    transform: translateY(-2px);
+}
+.card_header img
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px)
+{
+   
+    .nav_bar
+    {
+        width: 320px;
+        background-color: rgb(15, 15, 15);
+        display: block;
+        height: 130px;
+        gap: 10%;
+        position: fixed;
+        margin-top: 0;
+        margin-bottom: 5rem;
+    } 
+    .list_of_news
+    {
+       display: flex;
+       font-size: 10px;
+       margin-left: 1px;
+    }
+    .text_input
+    {
+        width: 180px;
+        height: 20px;
+        
+    }
+    .search_button
+    {
+        width: 50px;
+        height: 26px;
+        display: inline;
+        font-size: 8px;
+        margin-bottom: 8px;
+    }
+    .card
+    {
+        width: 320px;
+    }
+    .logo
+    {
+        margin: 0 0 0 0;
+       transform: scaleX(0.5px);
+       transform: scaleY(0.5px);
+    }
+    .hero_section
+    {
+        margin-top: 128px;
+    }
+    .cards_container{
+        margin-top: 50px;
+    }
+}
